@@ -28,6 +28,7 @@ h4:hover{
     width: 500px;
     height:400px;
     object-fit: cover;
+    transition: opacity 0.3s;
 }
 #menu-holder{
     height: 100px;

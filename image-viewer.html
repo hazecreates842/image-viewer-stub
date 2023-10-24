@@ -5,17 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Viewer</title>
-    <link rel="stylesheet" href="css/image-viewer.css"/>
+    <link rel="stylesheet" href="css/image-viewer.css"/> 
+    <!-- links to the css file and within that file I can style -->
+
+    <!-- links to the js file -->
+    <script src="js/image-viewer.js" defer></script>
+    <!-- defer is important to delay the JS or it will just run immediately which is problematic -->
+
 </head>
 <body>
-    <div id="container">
+
+    <div id="container"> 
+
         <img id="hero-image">
-        <div id="menu-holder">
-            <div class="menu-item"><h4>Cat</h4></div>
-            <div class="menu-item"><h4>Dog</h4></div>
-            <div class="menu-item"><h4>Guinea Pig</h4></div>
-            <div class="menu-item"><h4>Hamster</h4></div>
-            <div class="menu-item"><h4>Rabbit</h4></div>
+
+        <!-- has all the menu items in it -->
+        <div id="menu-holder"> 
+            <!-- U won't get prompted so u have to be careful it stores the data from the relevant data attribute -->
+    <!-- Data Storage -->
+            <div class="menu-item" data-image="images/cat.jpg"><h4>Cat</h4></div>
+            <div class="menu-item" data-image="images/dog.jpg"><h4>Wild Dog</h4></div>
+            <div class="menu-item" data-image="images/guinea-pig.jpg"><h4>Guinea Pig</h4></div>
+            <div class="menu-item" data-image="images/hamster.jpg"><h4>Hamster</h4></div>
+            <div class="menu-item" data-image="images/rabbit.jpg"><h4>Rabbit</h4></div>
         </div>
     </div>
 </body>
